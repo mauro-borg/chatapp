@@ -1,0 +1,15 @@
+
+install new module (in ./node_modules) and save in dependencies:
+
+$ npm install --save <module>
+
+(change --save to --save-dev to save in development dependencies)
+
+run the app:
+
+$ node app.js
+
+set environment variables:
+NODE_ENV=production --> will not expose stack traces to clients
+(default is development, i.e. NODE_ENV not defined)
+DEBUG=express:* --> will turn on verbose express.js debugging
