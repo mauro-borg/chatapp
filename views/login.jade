@@ -14,15 +14,16 @@ html(lang='en')
         #navbarSupportedContent.collapse.navbar-collapse
           ul.navbar-nav.me-auto.mb-2.mb-lg-0
             li.nav-item
-              a.nav-link.active(href='/') Home
-            li.nav-item
-              a.nav-link(href='/admin/rooms') Chat Rooms
-            li.nav-item
-              a.nav-link(href='/admin/users') Users
-          ul.navbar-nav.navbar-right
-            li.nav-item
-              a.nav.link(href='/logout') Logout
+              a.nav-link.active(href='/login') Welcome
     .container
-      .main-content
-        block content
-    script(src='/js/bootstrap.bundle.min.js')
+      .main-content.row
+        .col-md-4.col-md-offset-4
+          form(action='/login', method='post')
+            .form-group
+              label Username:
+              input.form-control(type='text', name='username')
+            .form-group
+              label Password:
+              input.form-control(type='password', name='password')
+            .form-group
+              input.btn.btn-primary(type='submit', value='Log in')

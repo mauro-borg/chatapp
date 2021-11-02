@@ -1,0 +1,17 @@
+[
+  {
+    "name": "wes",
+    "id": "b41e9fbc-3c2e-11ec-a4a7-ebe0dd948efc",
+    "password": "pass"
+  },
+  {
+    "name": "pax",
+    "id": "f95e90d2-3c2e-11ec-8ed2-9340185325e3",
+    "password": "treats"
+  },
+  {
+    "name": "john",
+    "id": "041f2f90-3c2f-11ec-a518-0f3cdd701fab",
+    "password": "doe"
+  }
+]
